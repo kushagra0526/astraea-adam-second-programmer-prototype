@@ -1,0 +1,7 @@
+{
+ "note": "Frozen before the first run. A different study design: 6-weekly assessments with +-3 day windows, more missed visits and new therapies, more partial AE dates, 90 subjects, a SAP with a 28-day TEAE window, and two bug kinds that are NOT in the diagnosis library (death without progression censored; TRTEDT from a zero-dose record), which must come out as REVIEW, never as a wrong rule name.",
+ "seeds": [101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120, 121, 122, 123, 124, 125, 126, 127, 128, 129, 130, 131, 132, 133, 134, 135, 136, 137, 138, 139, 140, 141, 142, 143, 144, 145, 146, 147, 148, 149, 150, 151, 152, 153, 154, 155, 156, 157, 158, 159, 160],
+ "cfg": {"n": 90, "visit_weeks": 6, "window": 3, "miss_p": 0.12, "newtx_p": 0.22, "ae_partial_p": 0.35, "zero_first_p": 0.2, "start": "2025-06-02"},
+ "spec": {"teae_window": 28, "visit_weeks": 6, "window": 3},
+ "unknown_bugs": ["death_censored", "trtedt_any"]
+}
