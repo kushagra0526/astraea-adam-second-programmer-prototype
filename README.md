@@ -4,6 +4,8 @@ Unofficial prototype by Kushagra Pratap Singh. Not affiliated with Astraea.
 
 Astraea automates clinical-trial biometrics, from protocol and raw data to SDTM, ADaM and TFLs, with "QC, Pinnacle 21 checks" ([YC](https://www.ycombinator.com/companies/astraea)). Pinnacle 21 checks *conformance*: structure, controlled terminology, required variables. It can't know your SAP. A PFS that isn't censored at new anticancer therapy, or a TRTSDT taken from a held (zero-dose) first record, is perfectly conformant and still wrong. That's why sponsors QC ADaM by **independent double programming**. When an AI writes the first program in 7 days, the second program has to be automatic too. It also has to say *which rule* differs, not just "4,312 cells differ".
 
+![demo](docs/demo.jpg)
+
 ## What it does (`qc/`, stdlib)
 - **`sdtm.py`: a synthetic oncology study.**
   - Domains: DM, EX (incl. held first doses and never-treated subjects), RS (scheduled assessments with windows, missed visits, NE, PD), DS deaths, CM new anticancer therapy, AE with partial dates.
